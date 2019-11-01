@@ -73,6 +73,22 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 </style>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -138,11 +154,18 @@ input[type=submit]:hover {
 			 
 			
 	<!-- Start feature Area -->
-			<section class="feature-area section-gap" id="sobremi" style="background-color:#73ebeb">
+			<section class="feature-area section-gap" id="sobremi" style="background: rgba(183,222,237,1);
+background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(0%, rgba(113,206,239,1)), color-stop(0%, rgba(33,180,226,1)), color-stop(49%, rgba(13,64,92,1)), color-stop(72%, rgba(4,9,29,1)));
+background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#04091d', GradientType=0 );">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-12 pb-40 header-text text-center">
-							<h3 class="pb-10 text-black">3 aspectos claves de las páginas web y tiendas online que diseño</h3>
+							<h3 class="pb-10 text-white">3 aspectos claves de las páginas web y tiendas online que diseño</h3>
 							 
 						</div>
 					</div>							
@@ -245,13 +268,20 @@ input[type=submit]:hover {
 
 		
 <!-- Start offered-service Area -->
-			<section class="offered-service-area section-gap" id="portafolio" style="background-color: #73ebeb">
+			<section class="offered-service-area section-gap" id="portafolio" style="background: rgba(183,222,237,1);
+background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(0%, rgba(113,206,239,1)), color-stop(0%, rgba(33,180,226,1)), color-stop(49%, rgba(13,64,92,1)), color-stop(72%, rgba(4,9,29,1)));
+background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 0%, rgba(33,180,226,1) 0%, rgba(13,64,92,1) 49%, rgba(4,9,29,1) 72%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#04091d', GradientType=0 );">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-12 pb-40 header-text text-center">
-							<h1 class="pb-10">Portafolio</h1>
+							<h1 class="pb-10" style="color:white">Portafolio</h1>
 							
-							<h5 class="text-black">
+							<h5 class="text-white">
 								Proyectos que he realizado para diversas empresas.
 							</h5> 
 							 
@@ -261,9 +291,9 @@ input[type=submit]:hover {
 						<div class="col-lg-3">
 							<div class="single-offered-service">
 								<a href="https://caceresexportimport.com/">
-								<img style="height: 150px;"  class="img-fluid" src="portafolio/img/caceresexportimport.png" alt="caceresexportimport">
+								<img class="hvr-bounce-in" style="height: 150px;"  class="img-fluid" src="portafolio/img/caceresexportimport.png" alt="caceresexportimport">
 								
-									<h4 style="text-align: center;">Caceres Export Import</h4>
+									<h4 style="text-align: center;color:white">Caceres Export Import</h4>
 								</a>	
 								 
 								
@@ -272,9 +302,9 @@ input[type=submit]:hover {
 						<div class="col-lg-3">
 							<div class="single-offered-service">
 								<a href="https://nivalsolutions.com/">
-								<img style="height: 150px;"  class="img-fluid" src="portafolio/img/nivalsolutions.png" alt="nivalsolutions">
+								<img class="hvr-bounce-in" style="height: 150px;"  class="img-fluid" src="portafolio/img/nivalsolutions.png" alt="nivalsolutions">
 								
-									<h4 style="text-align: center;">Nival Solutions</h4>
+									<h4 style="text-align: center;color:white">Nival Solutions</h4>
 								</a>	
 								 
 								
@@ -283,9 +313,9 @@ input[type=submit]:hover {
 						<div class="col-lg-3">
 							<div class="single-offered-service">
 								<a href="https://artesispro.com/">
-								<img style="height: 150px;" class="img-fluid" src="https://i.ibb.co/nzMLwyx/artesisproscreenshot.png" alt="artesispro">
+								<img class="hvr-bounce-in" style="height: 150px;" class="img-fluid" src="https://i.ibb.co/nzMLwyx/artesisproscreenshot.png" alt="artesispro">
 								
-									<h4 style="text-align: center;">ArtesisPro</h4>
+									<h4 style="text-align: center;color:white">ArtesisPro</h4>
 								</a>	
 								 
 								
@@ -294,9 +324,31 @@ input[type=submit]:hover {
 						<div class="col-lg-3">
 							<div class="single-offered-service">
 								<a href="https://resakout.com/">
-								<img style="height: 150px;" class="img-fluid" src="portafolio/img/resakout.png" alt="resakout">
+								<img class="hvr-bounce-in" style="height: 150px;" class="img-fluid" src="portafolio/img/resakout.png" alt="resakout">
 								
-									<h4 style="text-align: center;">Resakout</h4>
+									<h4 style="text-align: center;color:white">Resakout</h4>
+								</a>	
+								 
+								
+							</div>
+						</div>	
+						<div class="col-lg-3">
+							<div class="single-offered-service">
+								<a href="https://pcsoft.com.pe/">
+								<img  class="hvr-bounce-in" style="height: 150px;" class="img-fluid" src="portafolio/img/pcsoft.png" alt="pcsoft">
+								
+									<h4 style="text-align: center;color:white">PCSOFT Tecnología</h4>
+								</a>	
+								 
+								
+							</div>
+						</div>	
+						<div class="col-lg-3">
+							<div class="single-offered-service">
+								<a href="https://contacto.rsaperu.com/">
+								<img class="hvr-bounce-in" style="height: 150px;" class="img-fluid" src="portafolio/img/rsaperu.png" alt="rsaperu">
+								
+									<h4 style="text-align: center;color:white">RSAPERU</h4>
 								</a>	
 								 
 								
