@@ -1,0 +1,45 @@
+.footer {
+    color: $lighterBlackColor;
+    font-size: 80%;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+
+    a {
+        @include transition(all 0.2s);
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        &:link, &:visited { color: $lighterBlackColor; }
+        &:hover, &:active { color: white; border-bottom: 1px solid white; }
+    }
+
+    .footer-nav {
+        text-align: center;
+        @include mq-tablet { text-align: left; }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li { display: inline-block; }
+    }
+
+    .social-nav {
+        font-size: 130%;
+        text-align: center;
+        margin-top: 0.5rem;
+        @include mq-tablet { text-align: right; margin-top: 0; }
+
+        a {
+            padding: 0.5rem;
+            border: none !important;
+        }
+    }
+
+    .copyright {
+        letter-spacing: 0.1rem;
+        text-align: center;
+        margin-top: 1.75rem;
+    }
+}

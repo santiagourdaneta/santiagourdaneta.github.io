@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Reloj Pomodoro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" media="(min-width: 320px) and (max-width: 640px)" href="css/media.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <meta name="description" content="Reloj Pomodoro">   
+
+</head>
+<body>
+  <div class="app-container">
+    <main class="main-container">
+      <span class="app-info__icon lnr lnr-question-circle"></span>
+      <!-- Modal -->
+      <div class="app-info__container">
+        <div class="app-info__modal">
+          <span class="app-info__close lnr lnr-cross"></span>
+          <h1 class="app-info__title">Que es Pomodoro?</h1>
+          <p class="app-info__text">Pomodoro es una técnica con el propósito de mejorar la productividad medida por un temporizador. El tiempo de trabajo o estudio se divide en pequeños cambios con pausas intermedias. Por ejemplo, puedes tener 4 sesiones de trabajo de 25 minutos cada una con 5 minutos de descanso tomados después de cada sesión.<br><br>  ¡A trabajar se ha dicho!</p>
+        </div>
+      </div>
+      <div class="app-info__overly"></div>
+      <!-- END Modal -->
+      <div class="title__container">
+        <h1 class="title">Reloj Pomod<img src="images/clock_2.svg" class="title__icon"></span>ro</h1>
+      </div>
+        <h3 class="description">Organiza tu tiempo</h3>
+      <div class="settings__container">
+        <span class="settings__message"></span>
+        <div class="settings__time">
+          <div class="settings__time-work">
+            <img src="images/laptop_2.svg" class="settings__time__work-icon" alt="work icon"></span>
+              <button class="settings__time-button settings__time-substract" data-work-btn="-">-</button>
+            <span class="settings__time-digits">25m</span>
+              <button class="settings__time-button settings__time-add" data-work-btn="+">+</button>
+          </div>
+        </div>
+        <div class="settings__time">
+          <div class="settings__time-break">
+            <img src="images/bean_2.svg" class="settings__time__break-icon" alt="break icon"></span>
+            <button class="settings__time-button settings__time-substract" data-break-btn="-">-</button>
+            <span class="settings__time-digits">5m</span>
+            <button class="settings__time-button settings__time-add" data-break-btn="+">+</button>
+          </div>
+        </div>
+      </div><!-- END settings__container -->
+      <div class="clock-container">
+        <span class="clock-message">¡Toma un descanso más largo ahora y reinicia Pomodoro!</span>
+        <h2 class="clock-session">Trabajo</h2>
+        <h4 class="clock-session__count">Sesion 1</h4>
+        <div class="clock-time">25:00</div>
+        <!-- buttons -->
+        <button class="clock__btn__play"></button>
+        <button class="clock__btn__pause"></button>
+        <button class="clock__btn__reset"></button>
+        <!-- tooltips -->
+        <div class="clock-tooltip clock-tooltip__play">iniciar</div>
+        <div class="clock-tooltip clock-tooltip__pause">pausar</div>
+        <div class="clock-tooltip clock-tooltip__reset">resetear</div>
+      </div><!-- END clock-container -->
+    </main><!-- END container -->
+    <footer class="footer">
+      <h4 class="footer__copyright">&copy; Santiago Urdaneta 2018</h4>
+       
+    </footer><!-- END footer -->
+  </div><!-- END app-container -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>

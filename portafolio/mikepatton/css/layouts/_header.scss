@@ -1,0 +1,39 @@
+header {
+    @extend %full-screen-bg;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0, 0, 0, 0.15)),
+        url(../img/nav_bg.jpg);
+    box-shadow: inset 0 -10px 70px rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    @include mq-large-desktop {
+        background-attachment: fixed;
+    }
+}
+
+.big-logo {
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    @include transform(translate(-50%, -90%));
+
+    width: 300px;
+    z-index: 0;
+
+    @include mq-tablet {
+        width: 520px;
+        top: 65%;
+        @include transform(translate(-50%, -65%));
+    }
+}
+
+.social-nav-header {
+    @extend .social-nav;
+    left: 50%;
+    @include transform(translateX(-50%));
+    bottom: 55px;
+    display: none;
+    position: absolute;
+
+    @include mq-tablet { display: block; }
+}

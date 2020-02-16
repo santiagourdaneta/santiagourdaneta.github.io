@@ -1,0 +1,92 @@
+@media screen and (min-width: 320px) and (max-width: 640px){
+  body {
+    font-size: 120%;
+  }
+  button:focus {
+    outline: none;
+  }
+  .app-container {
+    overflow: hidden;
+  }
+  .main-container {
+    max-width: 85%;
+  }
+  .app-info__container {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .title__container {
+    margin-top: 2em;
+  }
+  .container .title {
+    width: 300px;
+    margin: 0.5em auto 0;
+    font-size: 3.5em;
+  }
+  .title__icon {
+    width: 22px;
+    height: auto;
+  }
+  .app-info__modal {
+    box-sizing: padding-box;
+    padding: 0.5em 1em 1.5em;
+  }
+  .app-info__title {
+    margin-top: 1em;
+    font-size: 2.5em;
+  }
+  .app-info__text {
+    font-size: 1.1em;
+  }
+  .settings__message {
+    width: 90%;
+    padding: 3px 7px;
+  }
+  .settings__time {
+    min-width: 160px;
+    max-width: 200px;
+  }
+  .clock-message {
+    top: -3em;
+  }
+  .clock__btn__play,
+  .clock__btn__pause,
+  .clock__btn__reset {
+    width: 46px;
+    height: 46px;
+  }
+  .clock__btn__play {
+    top: 12.3em;
+    left: calc(50% - 74px);
+  }
+  .clock__btn__pause {
+    top: 14.3em;
+    left: calc(50% - 23px);
+  }
+  .clock__btn__reset {
+    top: 12.3em;
+    left: calc(50% + 28px);
+  }
+  .clock-tooltip__play {
+    bottom: 0em;
+    left: calc(50% - 70px);
+  }
+  .clock-tooltip__pause {
+    bottom: -1.8em;
+    left: calc(50% - 24px);
+  }
+  .clock-tooltip__reset {
+    bottom: 0em;
+    left: calc(50% + 32px);
+  }
+  .footer__social-btn {
+    margin-top: 0.8em;
+  }
+  .fa.fa-lg {
+    font-size: 1.8em;
+  }
+}

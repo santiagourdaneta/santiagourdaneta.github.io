@@ -1,0 +1,61 @@
+.navbar-custom {
+    background-color: rgba(34, 34, 34, 0.75);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    z-index: 3;
+}
+
+.nav-logo {
+    width: 64px;
+    height: auto;
+}
+
+.custom-toggle-btn {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none;
+    right: 5px;
+    top: -1px;
+    position: absolute;
+
+    .icon-bar {
+        margin: 10px 0 6px 0;
+        height: 3px;
+        width: 28px;
+    }
+}
+
+#main-nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.plain-link {
+    text-transform: uppercase !important;
+    margin: 0 auto;
+    padding: 5px 10px 5px 10px;
+    @include mq-tablet { padding: 15px 10px 10px 10px; }
+    transition: all 0.25s;
+
+    a {
+        color: $mainColor !important;
+        font-size: 80%;
+        @include mq-tablet { font-size: 100%; }
+        @include mq-desktop { font-size: 115%; }
+    }
+
+    &:hover {
+        background-color: $mainColor;
+        a { color: white !important; }
+    }
+}
+
+//scrollspy style
+.plain-link.active {
+    background-color: $mainColor;
+    a {
+        background-color: transparent !important;
+        color: white !important;
+    }
+}
+
+//expanded nav style
+.collapsing .plain-link a, .in .plain-link a { text-align: center; }
