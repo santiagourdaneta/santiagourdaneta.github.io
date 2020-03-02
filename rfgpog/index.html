@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!--http://www.sitepoint.com/forums/showthread.php?1047258-Random-image-on-refresh-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls&display=swap" rel="stylesheet">
+    <title>RFGPOG - Random Fat Girl Photo Online Generator</title>
+    <link rel="icon" type="image/png" href="random/1.png">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <style>
+
+       
+
+      *{
+        font-family: 'Crafty Girls' ;
+          background-color:#F8F8FF;
+
+      }
+      .container{
+        text-align:center;
+
+      }
+      .title{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 45px;
+        color:#f00c93;
+        
+      }
+  
+      .subtitle{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      #image{
+        height:420px;
+        
+      }
+      a{
+        color:#ffffff;
+        font-size: 20px;
+        font-weight:600px;
+        background-color:#f00c93;
+        border-radius:30px;
+       padding:5px;
+      }
+      
+
+    </style>
+  </head>
+
+  <body>
+     
+    <div class="container">
+    <br>
+  <h1 class="title">
+  Random Fat Girl Photo Online Generator
+</h1> 
+    
+      
+ <h2 class="subtitle"> The Hottest Voluptuous Curvy Thick Plump Chubby Obese Overweight Women Around The World</h2>
+        <div id="randomImage"></div>
+       <br>
+      <p><a id="reload">Load another photo</a></p>
+      <br>
+    </div>
+  
+
+    <script>
+      var inicio = 1;
+      var fin = 20;
+      var imgs = [];
+
+      for (var i = inicio; i < fin+1; i++) {
+   imgs.push(i+'.png');
+
+}
+       var path = 'random/',
+    
+    i = Math.floor(Math.random()*imgs.length);
+$('#randomImage').append("<img  id='image' src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
+
+$('#reload').click(function() {
+    location.reload();
+});
+    </script>
+  </body>
+</html>
