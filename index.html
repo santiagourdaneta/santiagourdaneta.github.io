@@ -56,6 +56,48 @@
 
   gtag('config', 'G-EXRD2ECF8R');
 </script>
+
+
+  <style>
+    .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-12px);
+    }
+}
+  </style>
 </head>
 
 <body>
@@ -90,10 +132,14 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Santiago Urdaneta</h1>
-      <p>Creo sitios web <span class="typed" data-typed-items="Funcionales, Rentables"></span></p>
+      <p>Creo sitios web <span class="typed" data-typed-items="
+                           Funcionales, Rentables,  Minimalistas, Intuitivos, Escalables, Consistentes, Amigables, Optimizados"></span></p>
     </div>
   </section><!-- End Hero -->
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=51936291177" class="float bounce" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
   <main id="main">
 
     <!-- ======= About Section ======= -->
