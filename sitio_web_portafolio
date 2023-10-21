@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Santiago Urdaneta Desarrolador Web - Sitio Web Portafolio</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseño la tienda virtual(ecommerce) que tu negocio necesita" />
+    <!--<link rel="stylesheet" href="css/style.css" />-->
+  </head>
+  <body>
+    <h1>Sitio Web Portfolio</h1>
+    <div class="content">
+      
+ 
+      
+      <section id="content">
+        <section id="principal">
+ <p> Creo el sitio web portafolio para que muestres tu trabajo y que otras personas sepan más de ti. Es una plataforma base para tus proyectos, estudios de caso, y toda la información acerca de ti. Además de esto, es una de las mejores formas para expresar tu personalidad, experiencia. </p>
+
+<p>Un sitio web portafolio es una la solucion perfecta para fotógrafos, diseñadores, desarrolladores y una amplia variedad de artistas para presentar tu trabajo en línea. Les permite reflejar su identidad a través de tus trabajos – fotos, diseño gráfico, sketches, etc.</p>
+
+<p>Algunas caracteristicas:</p>
+
+
+Tu Página Personal
+Estudios de Caso
+Testimonios
+Llamadas a Tomar Acción
+Un Blog y una Sindicación
+
+<ol>
+<li>
+Es una Muestra de tu Trabajo</li>
+<li>
+Expone tus estudios de caso</li>
+<li>
+Presenta testimonios de clientes</li>
+<li>Lleva incorporado llamadas a tomar acción (CTA)</li>
+ 
+</ol>
+
+<p>Ejemplos:</p>
+
+<ol>
+  <li><a href="https://mxb.dev/">https://mxb.dev/</a></li>
+  <li><a href="https://olaolu.dev/">https://olaolu.dev/</a></li>
+  <li><a href="https://www.jason.af/">https://www.jason.af/</a>/</li>
+</ol>
+
+<h2><strong>Precio: $200 USD</strong></h2>
+        </section>
+       
+      </section>
+    
+      <footer>
+ © Santiago Urdaneta ® 2023 Todos los derechos reservados.
+      </footer>
+    </div>
+  </body>
+</html>
