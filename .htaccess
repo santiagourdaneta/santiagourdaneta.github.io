@@ -1,4 +1,15 @@
-Options +FollowSymLinks
-RewriteEngine On
+# mod_rewrite 
+# directive 
+<IfModule mod_rewrite.c>
+    RewriteEngine On
 
-RewriteRule ^user/([0-9]*)/([a-z]*)$ ./index.php?user=$1&action=$2
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+
+ DirectoryIndex index.html    
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>    
+</IfModule>
