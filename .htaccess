@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^user/([0-9]*)/([a-z]*)$ ./index.php?user=$1&action=$2
