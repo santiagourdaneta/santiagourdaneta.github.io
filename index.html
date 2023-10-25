@@ -97,177 +97,83 @@
         transform: translateY(-12px);
     }
 }
-
-    /* Utilidades */
-.slider__review{
-    font-weight: 300;
-    color:hsl(240, 38%, 20%);
-}
-.name{
-    font-weight: 700;
-    color: hsl(240, 38%, 20%);
-}
-.ocupation{
-    font-weight: 500;
-    color: hsl(240, 18%, 77%);
-}
-.slider__container, .slider__body, .container__arrows{
-    display: grid;
-}
-.slider__bg, .container__arrows div, .slider__texts{
-    display: flex;
-    justify-content: center;
-}
-.container__arrows, .slider__bg{
-    align-items: center;
-}
-.slider__container, .slider__texts{
-    margin: 0 auto;
-}
-.slider, .slider__texts{
-    position: relative;
-}
-.slider__texts img, .comillas, .container__arrows{
-    position: absolute;
-}
-.slider__review,.name, .ocupation{
-    text-align: center;
-}
-/* --------------------------- */
-
-.slider{
-    width: 100%;
-    height: 80vh;
-    margin: 2rem 0;
-}
-.slider__container{
-    width: 90%;
-    height: 100%;
-}
-.slider__body{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    width: 100%;
-    grid-template-rows: 320px 285px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1s;
-}
-.slider__bg{
-    height: 100%;
-    width: 100%;
-    background-image: url('../images/pattern-bg.svg');
-}
-.slider__testimony{
-    width: 80%;
-    height: 80%;
-    background: url('../images/image-tanya.jpg');
-}
-.testimony-2{
-    background-image: url('../images/image-john.jpg');
-}
-.testimony-3{
-    background-image: url('../images/testimony3.jpg');
-}
-.slider__bg, .slider__testimony{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.container__arrows{
-    width: 80px;
-    height: 40px;
-    grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-    border-radius: 50px;
-    top: 45%;
-    right: 40%;
-    z-index: 2;
-    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.13);
-}
-@media (min-width: 390px) {
-    .container__arrows{
-        top: 35%;
-     }
-}
-.slider__texts{
-    width: 90%;
-    flex-direction: column;
-    gap: 1rem;
-}
-.comillas{
-    top: 0;
-    left: 40%;
-    width: 50%;
-    height: 40%;
-}
-.slider__texts img{
-    width: 25%;
-    height: 20%;
-    top: 10%;
-}
-.slider__body--show{
-    opacity: 1;
-    pointer-events: unset;
-}
-@media (min-width: 1024px) {
-    .main, .slider, .information__testimony{
-        display: flex;
-    }
-    .main, .slider, .slider__body, .information__testimony{
-        align-items: center;
-    }
-    .main{
-        height: 100vh;
-        justify-content: center;
-    }
-    .slider__container{
-        width: 100%;
-    }
-    .slider__texts{
-        margin-top: 3rem;
-        height: 100%;
-    }
-    .slider{
-        width: 1220px;
-        height: 710px;
-        margin: 0;
-    }
-    .slider__body{
-        grid-template-rows: unset;
-        grid-template-columns: auto 710px;
-    }
-    .slider__bg{
-        height: 100%;
-        order: 1;
-    }
-    .container__arrows{
-        width: 120px;
-        height: 60px;
-        top: 80%;
-        right: 38%;
-    }
-    .slider__review{
-        line-height: 1.5;
-        font-size: 2rem;
-        width: 142%;
-        text-align: unset;
-    }
-    .information__testimony{
-        gap: 1rem;
-    }
-    .ocupation{
-        font-size: 1.3rem;
-    }
-    .slider__texts img{
-        width: 28%;
-        height: 95px;
-        /* top: -10%; */
-        top: 22%;
-        left: 22%;
-    }
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+.snip1574 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
+.snip1574 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1574 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.7;
+}
+
+.snip1574 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 10% 15%;
+}
+
+.snip1574 figcaption:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 170px;
+  opacity: 0.35;
+  font-style: normal;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 0px;
+  left: 50%;
+}
+
+.snip1574 blockquote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.snip1574 h3 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.snip1574 h5 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+   
    </style>
 </head>
 
@@ -457,75 +363,34 @@
 <!-- Portfolio -->
 
     
-   <main class="main"> 
-    <div class="container__arrows">
-      <div class="arrow-left">
-        <img src="./images/icon-prev.svg" alt="icon-previous" id="before">
-      </div>
-      <div class="arrow-right">
-        <img src="./images/icon-next.svg" alt="icon-next" id="next">
-      </div>
-    </div>
-    <section class="slider">
-      <div class="slider__container container">
-
-        <section class="slider__body slider__body--show" data-id="1">
-          <div class="slider__bg">
-            <div class="slider__testimony">
-          </div>
-        </div>
-          <div class="slider__texts">
-            <img src="./images/pattern-quotes.svg" alt="comillas" class="comillas">
-            <p class="slider__review">
-              “ I’ve been interested in coding for a while but never taken the jump, until now. 
-              I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-              excited about the future. ”
-            </p>
-            <div class="information__testimony">
-              <h2 class="name">Tanya Sinclair</h2>
-              <p class="ocupation">UX Engineer</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="slider__body" data-id="2">
-          <div class="slider__bg">
-            <div class="slider__testimony testimony-2">
-          </div>
-        </div>
-          <div class="slider__texts">
-            <img src="./images/pattern-quotes.svg" alt="comillas" class="comillas">
-            <p class="slider__review">
-              “ If you want to lay the best foundation possible I’d recommend taking this course. 
-              The depth the instructors go into is incredible. I now feel so confident about 
-              starting up as a professional developer. ”
-            </p>
-            <div class="information__testimony">
-                <h2 class="name">David Rodriguez</h2>
-                <p class="ocupation">Front End Developer</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="slider__body" data-id="3">
-          <div class="slider__bg">
-            <div class="slider__testimony testimony-3">
-          </div>
-        </div>
-          <div class="slider__texts">
-            <img src="./images/pattern-quotes.svg" alt="comillas" class="comillas">
-            <p class="slider__review">
-              "Nobis tenetur perferendis assumenda, magni inventore quo rem pariatur, nesciunt fugiat? Asperiores et voluptate sunt repellendus?"
-            </p>
-            <div class="information__testimony">
-              <h2 class="name">Liliana Juarez</h2>
-              <p class="ocupation">Software Engineer</p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-  </main>
+  <figure class="snip1574">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample40.jpg" alt="profile-sample2" />
+  <figcaption>
+    <blockquote>
+      <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+    </blockquote>
+    <h3>Sue Shei</h3>
+    <h5>Founder</h5>
+  </figcaption>
+</figure>
+<figure class="snip1574"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample37.jpg" alt="profile-sample7" />
+  <figcaption>
+    <blockquote>
+      <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+    </blockquote>
+    <h3>Will Barrow</h3>
+    <h5>Web Designer</h5>
+  </figcaption>
+</figure>
+<figure class="snip1574"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample35.jpg" alt="profile-sample6" />
+  <figcaption>
+    <blockquote>
+      <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+    </blockquote>
+    <h3>Indigo Violet</h3>
+    <h5>Public Relations</h5>
+  </figcaption>
+</figure>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
