@@ -5793,7 +5793,22 @@ function remove( elem, selector, keepData ) {
 
 jQuery.extend( {
 	htmlPrefilter: function( html ) {
-		return html.replace( rxhtmlTag, "<$1></$2>" );
+		// Create a temporary container to parse the HTML
+		var container = document.createElement('div');
+		container.innerHTML = html;
+
+		// Iterate through all child nodes to fix self-closing tags
+		var childNodes = container.childNodes;
+		for (var i = 0; i < childNodes.length; i++) {
+			var node = childNodes[i];
+			if (node.nodeType === 1 && !node.hasChildNodes() && !/^(area|br|col|embed|hr|img|input|link|meta|param)$/i.test(node.tagName)) {
+				// Expand self-closing tags to open/close tags
+				node.outerHTML = '<' + node.tagName + '>' + '</' + node.tagName + '>';
+			}
+		}
+
+		// Return the modified HTML
+		return container.innerHTML;
 	},
 
 	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
