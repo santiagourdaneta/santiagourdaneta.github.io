@@ -5793,7 +5793,10 @@ function remove( elem, selector, keepData ) {
 
 jQuery.extend( {
 	htmlPrefilter: function( html ) {
-		return html.replace( rxhtmlTag, "<$1></$2>" );
+		// Use a DOM parser to safely expand self-closing tags
+		var parser = new DOMParser();
+		var doc = parser.parseFromString(html, "text/html");
+		return doc.body.innerHTML;
 	},
 
 	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
