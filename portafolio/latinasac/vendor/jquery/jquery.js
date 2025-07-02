@@ -5793,7 +5793,19 @@ function remove( elem, selector, keepData ) {
 
 jQuery.extend( {
 	htmlPrefilter: function( html ) {
-		return html.replace( rxhtmlTag, "<$1></$2>" );
+		var parser = new DOMParser();
+		var doc = parser.parseFromString(html, "text/html");
+		doc.querySelectorAll("*").forEach(function(node) {
+			if (node.outerHTML.endsWith("/>") && !["area", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param"].includes(node.tagName.toLowerCase())) {
+				var parent = node.parentNode;
+				var expanded = document.createElement(node.tagName);
+				Array.from(node.attributes).forEach(function(attr) {
+					expanded.setAttribute(attr.name, attr.value);
+				});
+				parent.replaceChild(expanded, node);
+			}
+		});
+		return doc.body.innerHTML;
 	},
 
 	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
