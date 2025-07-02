@@ -5593,7 +5593,7 @@ var
 	/* eslint-disable max-len */
 
 	// See https://github.com/eslint/eslint/issues/3229
-	rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,
+// Removed `rxhtmlTag` definition as it is no longer used
 
 	/* eslint-enable */
 
@@ -5793,7 +5793,12 @@ function remove( elem, selector, keepData ) {
 
 jQuery.extend( {
 	htmlPrefilter: function( html ) {
-		return html.replace( rxhtmlTag, "<$1></$2>" );
+		// Use a DOM-based approach to handle self-closing tags safely
+		var parser = new DOMParser();
+		var doc = parser.parseFromString(html, "text/html");
+
+		// Serialize back to HTML
+		return doc.body.innerHTML;
 	},
 
 	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
