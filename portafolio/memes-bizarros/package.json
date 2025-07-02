@@ -26,11 +26,11 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-1-col-portfolio.git"
     },
     "dependencies": {
-        "bootstrap": "4.1.1",
-        "jquery": "3.3.1"
+        "bootstrap": "5.0.0",
+        "jquery": "3.5.0"
     },
     "devDependencies": {
-        "browser-sync": "2.29.3",
+        "browser-sync": "3.0.4",
         "gulp": "^3.9.1"
     }
 }
