@@ -32,16 +32,6 @@ Resultados: Aumento del 40% en reservas en 3 meses, reducción del 70% en tiempo
 
 Ver Demo de la App (Enlace a la sección de proyectos en tu portafolio)
 
-Mi Proceso de Colaboración: Trabajo contigo de forma transparente y eficiente, asegurando que tu visión se convierta en una realidad digital funcional y rentable.
-
-Entiendo tu Visión: Sesión para escuchar tus ideas y objetivos de negocio. Diseño y Prototipo a Medida: Creamos un prototipo visual interactivo para que veas cómo funcionará tu aplicación. Desarrollo Ágil y Transparente: Construyo tu aplicación con entregas frecuentes y comunicación constante. Pruebas Rigurosas y Lanzamiento: Tu sistema pasa por un proceso de distintos tipos de pruebas para asegurar su funcionamiento correcto y es alojado en un servidor en Internet. Soporte Continuo: Mantenimiento, actualizaciones y asistencia técnica post-lanzamiento para asegurar que tu software siga funcionando correctamente y de forma segura.
-
-🛠️ Tecnologías (Mi Stack) Aunque mi portafolio se enfoca en los beneficios para tu negocio, para los interesados en los detalles técnicos, mi experiencia incluye:
-
-Frontend: React, Next.js (SSR para SEO), HTML5, CSS3, JavaScript, TypeScript, Tailwind CSS. Backend: Node.js, Express.js, MongoDB (Mongoose), JWT para autenticación. Herramientas: Git, GitHub, Postman, Vercel (para despliegue).
-
-❓ Preguntas Frecuentes (FAQ) ¿Tienes dudas sobre costos, tiempos o si necesitas conocimientos técnicos para trabajar conmigo? Encuentra las respuestas en mi sección de FAQ
-
 ✅ Lo que Dicen Mis Clientes
 
 "Gracias a Santiago Urdaneta, ahora puedo gestionar mi cadena de suministro con una eficiencia nunca vista, lo que me ahorra miles al mes. ¡Un verdadero socio estratégico!" --- Carol Gonzalez, Dueña de Carol Fashion Salon.
