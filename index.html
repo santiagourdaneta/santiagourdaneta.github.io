@@ -1,0 +1,1461 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Portafolio Online - Santiago Urdaneta | Desarrollador de Software
+        </title>
+        <meta
+            name="description"
+            content="Santiago Urdaneta - Desarrollador de software especializado en transformar ideas en soluciones digitales robustas y escalables. Aplicaciones web, sistemas a medida y consultoría tecnológica para tu negocio."
+        />
+        <meta
+            name="keywords"
+            content="desarrollador de software, aplicaciones web, desarrollo a medida, consultoría tecnológica, fullstack, frontend, backend, portafolio, soluciones digitales, emprendedores, startups, PYMES, automatización de negocios, experiencia de cliente, software a medida, desarrollador, programador, Santiago Urdaneta, lima, peru"
+        />
+
+        <meta name="author" content="Santiago Urdaneta" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+        <link
+            rel="mask-icon"
+            href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg"
+            color="#000000"
+        />
+        <link
+            rel="alternate icon"
+            class="js-site-favicon"
+            type="image/png"
+            href="https://github.githubassets.com/favicons/favicon.png"
+        />
+        <link
+            rel="icon"
+            class="js-site-favicon"
+            type="image/svg+xml"
+            href="https://github.githubassets.com/favicons/favicon.svg"
+            data-base-href="https://github.githubassets.com/favicons/favicon"
+        />
+
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta
+            property="og:title"
+            content="Santiago Urdaneta | Desarrollador de Software para Emprendedores"
+        />
+        <meta
+            property="og:description"
+            content="Transforma tu visión en software rentable. Creando soluciones digitales a medida para potenciar tu negocio."
+        />
+        <meta
+            property="og:image"
+            content="https://placehold.co/1200x630/007bff/ffffff?text=Portafolio+Santiago"
+        />
+        <meta property="og:url" content="https://santiagourdaneta.github.io" />
+        <meta property="og:type" content="website" />
+
+        <link
+            rel="preload"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-solid-900.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Slab:wght@300;400;700&family=Inter:wght@300;400;600&display=swap"
+            media="print"
+            onload="this.media = 'all'"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            media="print"
+            onload="this.media = 'all'"
+        />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-EXRD2ECF8R"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-EXRD2ECF8R");
+        </script>
+
+        <style>
+            /* Variables CSS para facilitar la personalización */
+            :root {
+                --bg-dark: #0f111a; /* Base muy oscura, casi negro azulado */
+                --bg-texture: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzBGMTExQSIvPjxwYXRoIGQ9Ik0wIDBoMzJ2MzJIMEwzMiAwSDhWMzJMMCAzMloiIGZpbGw9IiM0NDQ0NTUiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4="); /* Textura sutil de ruido/grano */
+
+                --text-light: #e0e0e0; /* Texto principal claro */
+                --text-muted: #a0a0a0; /* Texto secundario/descripciones */
+
+                /* Acentos Sci-Fi / Metal */
+                --accent-blue: #00ffff; /* Cian eléctrico */
+                --accent-green: #00ff7f; /* Verde menta brillante */
+                --accent-metal: #b0b0b0; /* Gris metálico */
+
+                /* Acentos Café / Calidez */
+                --accent-orange: #ff8c00; /* Naranja oscuro / Mandarina */
+                --accent-brown: #8b4513; /* Marrón silla */
+                --accent-cream: #f5deb3; /* Crema trigo */
+
+                --border-subtle: rgba(
+                    255,
+                    255,
+                    255,
+                    0.08
+                ); /* Borde muy sutil */
+                --shadow-inner: rgba(
+                    0,
+                    0,
+                    0,
+                    0.4
+                ); /* Sombra interna para profundidad */
+                --shadow-hover: rgba(
+                    0,
+                    0,
+                    0,
+                    0.6
+                ); /* Sombra más fuerte al pasar el ratón */
+
+                --font-heading-main:
+                    "Orbitron", sans-serif; /* Futurista, impactante */
+                --font-heading-secondary:
+                    "Roboto Slab", serif; /* Robusto, literario */
+                --font-body: "Inter", sans-serif; /* Limpio, legible */
+
+                --bg-color: #0d1117;
+                --text-color: #c9d1d9;
+                --accent-color: #79c0ff;
+                --nav-height: 60px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+                /* Reducción global del 25% */
+                font-size: 85%;
+                background-color: #000000;
+            }
+
+            body {
+                font-family: var(--font-body);
+                background-color: #000000;
+                background-size: 32px 32px; /* Tamaño de la textura */
+                color: var(--text-color);
+                line-height: 1.5;
+                zoom: 0.9; /* Ajuste fino de escala */
+                padding: 0;
+                overflow-x: hidden;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative; /* Para los elementos de fondo */
+                min-width: 1366px;
+                margin: 0 auto;
+            }
+
+            /* 2. Prevención de CLS (El contenedor reserva el espacio) */
+            .main-header {
+                min-width: 100%;
+                min-height: var(--nav-height);
+                background-color: rgba(13, 17, 23, 0.95);
+                border-bottom: 1px solid #30363d;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                backdrop-filter: blur(8px); /* Efecto moderno pero ligero */
+            }
+
+            /* 3. Estilo del Navbar */
+            .navbar {
+                min-width: 100%;
+                margin: 0 auto;
+                height: var(--nav-height);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1.5rem;
+            }
+
+            .logo {
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: var(--accent-color);
+            }
+
+            .logo span {
+                animation: blink 1s infinite;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: var(--text-color);
+                font-weight: 500;
+                transition: color 0.2s;
+            }
+
+            .nav-links a:hover {
+                color: var(--accent-color);
+            }
+
+            .btn-cta {
+                border: 1px solid var(--accent-color);
+                padding: 0.4rem 1rem;
+                border-radius: 4px;
+            }
+
+            /* 4. Animación de Terminal */
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+
+            /* Responsividad para celulares viejos */
+            @media (max-width: 600px) {
+                .nav-links {
+                    gap: 1rem;
+                    font-size: 0.8rem;
+                }
+            }
+
+            @keyframes floatAndPulse {
+                0% {
+                    transform: translate(0, 0) scale(1);
+                    opacity: 0.05;
+                }
+                50% {
+                    transform: translate(20px, 40px) scale(1.05);
+                    opacity: 0.08;
+                }
+                100% {
+                    transform: translate(0, 0) scale(1);
+                    opacity: 0.05;
+                }
+            }
+
+            /* Contenedor principal */
+            .main-content-wrapper {
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                box-sizing: border-box;
+                z-index: 1; /* Asegura que el contenido esté sobre los elementos de fondo */
+            }
+
+            /* Estilos globales de tipografía */
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-family: var(--font-heading-secondary);
+                color: var(--text-light);
+                text-align: center;
+                margin-bottom: 25px;
+                text-shadow: 0 0 3px var(--shadow-soft); /* Sombra sutil, no brillo */
+            }
+
+            h1 {
+                font-family: var(--font-heading-main);
+                font-size: clamp(2em, 4vw, 4em);
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 20px;
+                color: var(--accent-blue); /* Cian para el título principal */
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                animation: subtlePulse 3s infinite alternate;
+                content-visibility: auto;
+            }
+
+            @keyframes subtlePulse {
+                from {
+                    text-shadow: 0 0 5px var(--accent-blue);
+                }
+                to {
+                    text-shadow: 0 0 10px var(--accent-blue);
+                }
+            }
+
+            h2 {
+                font-size: clamp(2em, 3vw, 3em);
+                font-weight: 700;
+                margin-top: 60px;
+                color: var(
+                    --accent-orange
+                ); /* Naranja para títulos de sección */
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            h2::after {
+                /* Subrayado abstracto/futurista */
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 3px;
+                background-color: var(--accent-green);
+                border-radius: 2px;
+            }
+
+            h3 {
+                font-size: clamp(1.4em, 2vw, 2em);
+                font-weight: 600;
+                color: var(--accent-cream); /* Crema para subtítulos */
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-family: var(--font-body);
+                font-size: clamp(1em, 2vw, 1.15em);
+                margin-bottom: 15px;
+                color: var(--text-light);
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            a {
+                color: var(--accent-blue);
+                text-decoration: none;
+                transition: color 0.3s ease;
+                font-weight: 600;
+            }
+
+            a:hover {
+                color: var(--accent-orange);
+            }
+
+            /* Secciones */
+            section {
+                padding: 80px 20px;
+                margin-bottom: 60px;
+                border-radius: 12px;
+                background-color: rgba(
+                    15,
+                    17,
+                    26,
+                    0.8
+                ); /* Fondo de sección más opaco */
+                box-shadow: inset 0 0 15px var(--shadow-inner); /* Sombra interna para profundidad */
+                border: 1px solid var(--border-subtle); /* Borde sutil */
+                position: relative;
+                overflow: hidden;
+                opacity: 0; /* Para animación de fade-in */
+                transform: translateY(30px); /* Para animación de fade-in */
+                transition:
+                    opacity 1s ease-out,
+                    transform 1s ease-out;
+            }
+
+            section.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* Hero Section */
+            #hero {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 90vh;
+                padding: 80px 20px;
+                background: none; /* Sin fondo específico aquí, usa el del body */
+                box-shadow: none;
+                border: none;
+                margin-bottom: 0; /* No margin-bottom para hero */
+            }
+
+            #hero .hero-subtitle {
+                font-size: clamp(1.5em, 2vw, 1em);
+                margin-bottom: 40px;
+                max-width: 900px;
+                color: var(--text-light);
+                font-weight: 300;
+                line-height: 1.5;
+            }
+
+            /* Botones */
+            .btn-primary {
+                background-color: #db1f1f;
+                color: white;
+                padding: 18px 40px;
+                border-radius: 5px; /* Ligeramente angular */
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.2em;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-3px) scale(1.02);
+                box-shadow: 0 6px 20px rgba(255, 140, 0, 0.6);
+                background-color: #ff2400;
+                color: white;
+            }
+
+            /* Proceso / Servicios */
+            #process .process-steps {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 40px;
+                margin-top: 40px;
+            }
+
+            #process .step-card {
+                background-color: rgba(25, 27, 36, 0.9);
+                padding: 35px;
+                border-radius: 8px;
+                box-shadow: inset 0 0 8px var(--shadow-inner);
+                text-align: center;
+                transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease,
+                    border-color 0.3s ease;
+                border: 1px solid var(--border-subtle);
+                position: relative;
+                overflow: hidden;
+            }
+
+            #process .step-card::before {
+                /* Efecto de "energía" sci-fi */
+                content: "";
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+
+                opacity: 0.1;
+                z-index: 0;
+            }
+
+            @keyframes rotateBorder {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            #process .step-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 30px var(--shadow-hover);
+                border-color: var(--accent-blue);
+            }
+
+            #process .step-card h3 {
+                color: var(--accent-blue); /* Azul para títulos de paso */
+                font-size: 1.5em;
+                margin-bottom: 15px;
+                position: relative;
+                z-index: 1;
+            }
+
+            #process .step-card .icon {
+                font-size: 3.5em;
+                color: var(--accent-orange); /* Naranja para iconos de paso */
+                margin-bottom: 20px;
+                animation: bounceIn 1s ease-out; /* Animación al cargar */
+                position: relative;
+                z-index: 1;
+            }
+
+            /* Proyectos */
+            #projects .project-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 40px;
+                margin-top: 40px;
+            }
+
+            #projects .project-card {
+                background-color: rgba(25, 27, 36, 0.9);
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: inset 0 0 10px var(--shadow-inner);
+                transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+                border: 1px solid var(--border-subtle);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            #projects .project-card:hover {
+                transform: translateY(-12px);
+                box-shadow:
+                    0 12px 35px var(--shadow-hover),
+                    inset 0 0 15px var(--accent-blue);
+            }
+
+            #projects .project-card img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                border-bottom: 1px solid var(--border-subtle);
+            }
+
+            #projects .project-content {
+                padding: 30px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #projects .project-content h3 {
+                margin-top: 0;
+                color: var(--accent-green); /* Verde para títulos de proyecto */
+                text-align: left;
+                font-size: 1.4em;
+                margin-bottom: 12px;
+            }
+
+            #projects .project-content .project-description {
+                font-size: 1em;
+                margin-bottom: 20px;
+                color: var(--text-muted);
+                flex-grow: 1;
+            }
+
+            #projects .project-links a {
+                display: inline-block;
+                margin-right: 20px;
+                padding: 10px 20px;
+                border: 1px solid var(--accent-orange); /* Borde naranja */
+                border-radius: 30px;
+                font-size: 0.95em;
+                font-weight: 600;
+                color: var(--accent-orange);
+                transition: all 0.3s ease;
+            }
+
+            #projects .project-links a:hover {
+                background-color: var(--accent-orange);
+                color: var(--bg-dark);
+                box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+                transform: translateY(-2px);
+            }
+
+            /* Habilidades */
+            #skills .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 25px;
+                margin-top: 40px;
+                justify-content: center;
+            }
+
+            #skills .skill-item {
+                background-color: rgba(25, 27, 36, 0.9);
+                padding: 25px;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 1em;
+                font-weight: 600;
+                color: var(
+                    --accent-metal
+                ); /* Gris metálico para texto de habilidad */
+                box-shadow: inset 0 0 5px var(--shadow-inner);
+                transition: all 0.3s ease;
+                border: 1px solid var(--border-subtle);
+            }
+
+            #skills .skill-item:hover {
+                background-color: rgba(40, 42, 55, 0.9);
+                transform: scale(1.05);
+                box-shadow:
+                    0 5px 20px var(--shadow-hover),
+                    inset 0 0 10px var(--accent-green);
+                color: var(--accent-green);
+            }
+
+            /* Contacto */
+            #contact {
+                text-align: center;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            #contact .contact-links {
+                margin-top: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+            }
+
+            #contact .contact-links a {
+                background-color: #00bfff;
+                color: var(--bg-dark);
+                padding: 15px 30px;
+                border-radius: 30px;
+                font-size: 1.1em;
+                font-weight: 700;
+                border: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 255, 255, 0.4);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            #contact .contact-links a:hover {
+                background-color: var(
+                    --accent-green
+                ); /* Verde al pasar el ratón */
+                color: var(--bg-dark);
+                box-shadow: 0 6px 20px rgba(0, 255, 127, 0.6);
+                transform: translateY(-3px);
+            }
+
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 40px 20px;
+                margin-top: 80px;
+                font-size: 0.9em;
+                color: var(--text-muted);
+                border-top: 1px solid var(--border-subtle);
+                width: 100%;
+                max-width: 1200px;
+                box-sizing: border-box;
+            }
+
+            /* Responsive Adjustments */
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 2.5em;
+                }
+                h2 {
+                    font-size: 2em;
+                    margin-top: 40px;
+                }
+                h3 {
+                    font-size: 1.4em;
+                }
+                p {
+                    font-size: 1em;
+                }
+                section {
+                    padding: 50px 15px;
+                    margin-bottom: 40px;
+                }
+                #hero {
+                    min-height: 70vh;
+                    padding: 60px 15px;
+                }
+                .btn-primary {
+                    padding: 15px 30px;
+                    font-size: 1.1em;
+                }
+                #process .process-steps,
+                #projects .project-grid,
+                #skills .skills-grid {
+                    grid-template-columns: 1fr;
+                }
+                #projects .project-card img {
+                    height: 200px;
+                }
+                #contact .contact-links a {
+                    font-size: 1em;
+                    padding: 12px 20px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 2em;
+                    letter-spacing: 1px;
+                }
+                h2 {
+                    font-size: 1.8em;
+                }
+                h3 {
+                    font-size: 1.2em;
+                }
+                .btn-primary {
+                    padding: 12px 25px;
+                    font-size: 1em;
+                }
+                #process .step-card,
+                #projects .project-card,
+                #skills .skill-item {
+                    padding: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="navbar" aria-label="Navegación principal">
+                <div class="logo">Santiago Urdaneta</div>
+                <ul class="nav-links">
+                    <li><a href="#about">Mis principios</a></li>
+                    <li><a href="#process">Como trabajo</a></li>
+                    <li><a href="#projects">Mis proyectos</a></li>
+                    <li><a href="#testimonios">Mis testimonios</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="#contact" class="btn-cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Elementos de fondo abstractos para la estética Sci-Fi/Orgánica -->
+        <div class="bg-abstract-element"></div>
+        <div class="bg-abstract-element"></div>
+        <div class="bg-abstract-element"></div>
+        <div class="bg-abstract-element"></div>
+
+        <header id="hero">
+            <h1>Transforma tu Visión en Software Rentable.</h1>
+            <p class="hero-subtitle">
+                Soy Santiago Urdaneta, tu socio tecnológico. Como desarrollador
+                de software, creo aplicaciones personalizadas que se adaptan a
+                tus clientes y a tu negocio.
+            </p>
+
+            <a href="#contact" class="btn-primary"
+                >¡Agenda una consulta gratuita!</a
+            >
+        </header>
+
+        <main class="main-content-wrapper">
+            <section id="about" class="text-center">
+                <h2>Mi Manifiesto: Software con Propósito</h2>
+                <p>
+                    En el vasto universo digital, no solo escribo código; forjo
+                    herramientas estratégicas que resuelven tus desafíos más
+                    apremiantes. Analizo tu problema, diseño una solución,
+                    programo, pruebo y despliego tu sistema. Mi experiencia me
+                    permite diseñar y construir soluciones informaticas que no
+                    solo funcionan, sino que impulsan tu crecimiento.
+                </p>
+                <p>
+                    Sea tu negocio un restaurante, tienda, logística, etc, cada
+                    proyecto es una oportunidad para destilar la esencia de tu
+                    visión y materializarla en una aplicación intuitiva, robusta
+                    y preparada para el futuro. Los pilares de cada solución que
+                    materializo son: accesibilidad, seguridad, estabilidad,
+                    escalabilidad, respaldo y soporte.
+                </p>
+            </section>
+
+            <section id="process">
+                <h2>El Proceso de Creación</h2>
+                <p class="text-center">
+                    Mi metodología es un viaje colaborativo, diseñado para
+                    convertir tu concepto en una realidad digital pulida y
+                    funcional.
+                </p>
+                <div class="process-steps">
+                    <div class="step-card">
+                        <i class="fas fa-brain icon"></i>
+                        <!-- Icono de pensamiento/idea -->
+                        <h3>1. Destilación de la Idea</h3>
+                        <p>
+                            Nos sumergimos en tus necesidades, tus metas y tus
+                            desafíos. Juntos, definimos el núcleo de tu visión.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <i class="fas fa-cogs icon"></i>
+                        <!-- Icono de engranajes/estructura -->
+                        <h3>2. Arquitectura y Diseño</h3>
+                        <p>
+                            Diseño la estructura técnica y la experiencia de
+                            usuario, asegurando una base sólida y una navegación
+                            fluida.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <i class="fas fa-hammer icon"></i>
+                        <!-- Icono de martillo/construcción (Metal) -->
+                        <h3>3. Forja del Código</h3>
+                        <p>
+                            Convierto el diseño en software funcional, línea a
+                            línea, con atención al detalle, la eficiencia y la
+                            escalabilidad.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <i class="fas fa-globe-americas icon"></i>
+                        <!-- Icono de lanzamiento/despliegue -->
+                        <h3>4. Despliegue y Evolución</h3>
+                        <p>
+                            Lanzo tu solución al mundo digital y me aseguro de
+                            su rendimiento, con miras a futuras mejoras y
+                            expansiones.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Casos de Éxito: El Impacto de la Innovación</h2>
+                <p class="text-center">
+                    Cada proyecto es una narrativa de cómo la tecnología
+                    resuelve problemas reales.
+                </p>
+                <div class="project-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>TusFinanzas</h3>
+                            <p class="project-description">
+                                El Desafío: Muchas personas y pequeños negocios
+                                luchan por entender dónde va su dinero cada día.
+                                La gestión manual de gastos e ingresos puede ser
+                                confusa, consumir mucho tiempo y dificultar la
+                                toma de decisiones financieras inteligentes.
+                                <br /><br />
+                                La Solución: Desarrollé una aplicación web
+                                sencilla y eficiente diseñada para ayudar a
+                                llevar un control detallado de gastos e ingresos
+                                diarios.
+                            </p>
+                            <img
+                                src="img/tus-finanzas-seven-vercel-app-1024xFULLdesktop-b95569.png"
+                                alt="TusFinanzas - aplicación web sencilla y eficiente diseñada para ayudar a llevar un control detallado de gastos e ingresos diarios"
+                                loading="lazy"
+                            />
+                            <br />
+                            <div class="project-links">
+                                <a
+                                    href="https://tus-finanzas-seven.vercel.app/"
+                                    target="_blank"
+                                    aria-label="Ver demo de TusFinanzas"
+                                    >Ver Demo</a
+                                >
+                                <a
+                                    href="https://github.com/santiagourdaneta/TusFinanzas"
+                                    target="_blank"
+                                    aria-label="Ver código de TusFinanzas"
+                                    >Código</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Conecta 4 con Inteligencia Artificial</h3>
+                            <p class="project-description">
+                                El Desafío: Los juegos clásicos de estrategia,
+                                como el Conecta 4, son divertidos pero pueden
+                                volverse predecibles o repetitivos cuando no hay
+                                un oponente humano disponible. La mayoría de las
+                                implementaciones de IA son básicas y no logran
+                                simular una experiencia de juego desafiante y
+                                gratificante.
+                                <br /><br />
+                                La Solución: Creé una implementación del clásico
+                                juego de Conecta 4 para el navegador, donde
+                                puedes desafiar a una Inteligencia Artificial
+                                estratégica.
+                            </p>
+                            <img
+                                src="img/Conecta 4 con Inteligencia Artificial.png"
+                                alt="Conecta 4 con Inteligencia Artificial - implementación del clásico juego de Conecta 4 para el navegador, donde puedes desafiar a una Inteligencia Artificial estratégica"
+                                loading="lazy"
+                            />
+                            <br />
+                            <div class="project-links">
+                                <a
+                                    href="https://santiagourdaneta.github.io/Connect-Four-AI-Game-Conecta-4-con-IA-/"
+                                    target="_blank"
+                                    aria-label="Ver demo de Conecta 4 con Inteligencia Artificial"
+                                    >Ver Demo</a
+                                >
+                                <a
+                                    href="https://github.com/santiagourdaneta/Connect-Four-AI-Game-Conecta-4-con-IA-"
+                                    target="_blank"
+                                    aria-label="Ver código de Conecta 4 con Inteligencia Artificial"
+                                    >Código</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>
+                                Simulador de toma de decisiones estratégicas con
+                                Inteligencia Artificial
+                            </h3>
+                            <p class="project-description">
+                                El Desafío: En el mundo empresarial actual,
+                                tomar decisiones estratégicas es más complejo
+                                que nunca. Las empresas y los líderes a menudo
+                                se enfrentan a escenarios con múltiples
+                                variables, información incompleta y
+                                consecuencias inciertas.
+                                <br /><br />
+                                La Solución: Creé un innovador simulador de toma
+                                de decisiones estratégicas que utiliza
+                                Inteligencia Artificial (IA) para ayudarte a
+                                mejorar tu lógica de negocio y resolución de
+                                problemas.
+                            </p>
+                            <img
+                                src="img/screencapture-simulador-decisiones-ia-streamlit-app-2025-07-19-20_56_49.png"
+                                alt="Simulador de toma de decisiones estratégicas con Inteligencia Artificial - innovador simulador de toma de decisiones estratégicas que utiliza Inteligencia Artificial (IA) para ayudarte a mejorar tu lógica de negocio y resolución de problemas"
+                                loading="lazy"
+                            />
+                            <br />
+                            <div class="project-links">
+                                <a
+                                    href="https://simulador-decisiones-ia.streamlit.app/"
+                                    target="_blank"
+                                    aria-label="Ver demo de Simulador de toma de decisiones estratégicas con Inteligencia Artificial"
+                                    >Ver Demo</a
+                                >
+                                <a
+                                    href="https://github.com/santiagourdaneta/Simulador-de-Decisiones-Estrategicas-con-IA-Tu-Entrenador-Personal-Inteligente"
+                                    target="_blank"
+                                    aria-label="Ver código de Simulador de toma de decisiones estratégicas con Inteligencia Artificial"
+                                    >Código</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>StockOptimizeAI</h3>
+                            <p class="project-description">
+                                El Desafío: Predecir con exactitud cuánto de
+                                cada producto se venderá en el futuro,
+                                especialmente cuando factores como las
+                                temporadas, las ofertas o incluso eventos
+                                inesperados influyen en la demanda. Esto deja a
+                                los pequeños empresarios adivinando, en lugar de
+                                planificar con certeza.
+                                <br /><br />
+                                La Solución: Creé un sistema inteligente de
+                                optimización de stock diseñado específicamente
+                                para pequeños negocios. Utiliza Inteligencia
+                                Artificial (IA) y Machine Learning (ML) para
+                                predecir la demanda futura basándose en el
+                                historial de ventas, estacionalidad y
+                                promociones.
+                            </p>
+                            <img
+                                src="img/screencapture-stockoptimizeai-streamlit-app-2025-07-19-20_57_52.png"
+                                alt="StockOptimizeAI - sistema inteligente de optimización de stock diseñado específicamente para pequeños negocios. Utiliza Inteligencia Artificial (IA) y Machine Learning (ML) para predecir la demanda futura basándose en el historial de ventas, estacionalidad y promociones"
+                                loading="lazy"
+                            />
+                            <br />
+                            <div class="project-links">
+                                <a
+                                    href="https://stockoptimizeai.streamlit.app/"
+                                    target="_blank"
+                                    aria-label="Ver demo de StockOptimizeAI"
+                                    >Ver Demo</a
+                                >
+                                <a
+                                    href="https://github.com/santiagourdaneta/StockOptimizeAI-Optimizacion-de-Inventario-Inteligente-para-Pequenos-Negocios"
+                                    target="_blank"
+                                    aria-label="Ver código de StockOptimizeAI"
+                                    >Código</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Testimonios -->
+            <section id="testimonios" class="py-16 md:py-24 bg-white">
+                <div class="container mx-auto px-4">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12"
+                    >
+                        Lo que Dicen Mis Clientes
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Testimonio 1 -->
+                        <div
+                            class="bg-blue-50 p-8 rounded-lg shadow-md border border-blue-200"
+                        >
+                            <p class="text-lg italic text-gray-700 mb-4">
+                                "Gracias a Santiago Urdaneta, ahora puedo
+                                gestionar mi cadena de suministro con una
+                                eficiencia nunca vista, lo que me ahorra miles
+                                al mes. ¡Un verdadero socio estratégico!"
+                            </p>
+                            <p class="font-semibold text-blue-800">
+                                - Carol Gonzalez, Dueña de Carol Fashion Salon.
+                            </p>
+                        </div>
+                        <!-- Testimonio 2 -->
+                        <div
+                            class="bg-blue-50 p-8 rounded-lg shadow-md border border-blue-200"
+                        >
+                            <p class="text-lg italic text-gray-700 mb-4">
+                                "La plataforma que me creó Santiago Urdaneta
+                                transformó mi negocio. Duplicamos nuestros
+                                clientes en solo 6 meses. ¡Su trabajo es
+                                excepcional!"
+                            </p>
+                            <p class="font-semibold text-blue-800">
+                                - Ana Pérez, CEO de Consultora Ágil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Preguntas Frecuentes (FAQ) -->
+            <section id="faq" class="py-16 md:py-24 bg-gray-100">
+                <div class="container mx-auto px-4">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12"
+                    >
+                        Preguntas Frecuentes
+                    </h2>
+                    <div class="max-w-3xl mx-auto">
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q5"
+                            >
+                                <h3>
+                                    ¿Cuales son las diferencias entre un
+                                    programador y un desarrollador?
+                                </h3>
+                            </div>
+                            <div
+                                id="faq-q5"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cómo sé que mi idea está segura contigo?"
+                            >
+                                <p class="text-gray-700">
+                                    Un programador se enfoca en escribir código
+                                    siguiendo instrucciones específicas,
+                                    mientras que un desarrollador abarca una
+                                    visión más amplia: analiza problemas, diseña
+                                    soluciones, programa, prueba y despliega
+                                    sistemas completos. Es decir, todo
+                                    programador es parte del desarrollo, pero no
+                                    todo desarrollador se limita solo a
+                                    programar.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q5"
+                            >
+                                <h3>¿Por qué tener un sistema a medida?</h3>
+                            </div>
+                            <div
+                                id="faq-q5"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cómo sé que mi idea está segura contigo?"
+                            >
+                                <p class="text-gray-700">
+                                    Tener un sistema a medida permite adaptar la
+                                    tecnología exactamente a las necesidades de
+                                    tu negocio, mejorando la eficiencia,
+                                    reduciendo errores y automatizando procesos
+                                    clave. A diferencia del software genérico,
+                                    un sistema personalizado crece contigo, se
+                                    ajusta a tu forma de trabajar y te da
+                                    control total sobre funciones, seguridad y
+                                    escalabilidad. Tres sistemas a medida
+                                    utilizados por grandes empresas, diseñados
+                                    específicamente según sus necesidades son:
+                                    Amazon, Netflix y Uber.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q5"
+                            >
+                                <h3>¿Que es hosting, desplegar y dominio?</h3>
+                            </div>
+                            <div
+                                id="faq-q5"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cómo sé que mi idea está segura contigo?"
+                            >
+                                <p class="text-gray-700">
+                                    El hosting es el servicio que proporciona el
+                                    espacio y los recursos en un servidor en
+                                    Internet para almacenar y ejecutar un sitio
+                                    web o sistema para que funcione 24/7;
+                                    desplegar es el proceso de subir y
+                                    configurar un sistema en un hosting para que
+                                    funcione correctamente y sea accesible en
+                                    línea; el dominio es el nombre único (como
+                                    tunegocio.com) que permite acceder
+                                    fácilmente al sitio web.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q1"
+                            >
+                                <h3>
+                                    ¿Cuánto cuesta desarrollar una aplicación?
+                                </h3>
+                            </div>
+                            <div
+                                id="faq-q1"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cuánto cuesta desarrollar una aplicación?"
+                            >
+                                <p class="text-gray-700">
+                                    El costo varía significativamente según la
+                                    complejidad, las funcionalidades requeridas
+                                    y el tiempo de desarrollo. Ofrezco
+                                    soluciones personalizadas con presupuestos
+                                    transparentes. Lo mejor es que
+                                    <a href="#contact"
+                                        >agendes una consulta gratuita</a
+                                    >
+                                    para entender tu proyecto y darte una
+                                    estimación precisa.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q1"
+                            >
+                                <h3>¿Que es un Producto Mínimo Viable(MVP)?</h3>
+                            </div>
+                            <div
+                                id="faq-q1"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cuánto cuesta desarrollar una aplicación?"
+                            >
+                                <p class="text-gray-700">
+                                    Un Producto Mínimo Viable (MVP) es la
+                                    versión más básica y funcional de un
+                                    producto que se lanza con las
+                                    características esenciales para resolver un
+                                    problema específico y probar su valor en el
+                                    mercado. Su objetivo es validar la idea con
+                                    usuarios reales lo antes posible, con el
+                                    menor esfuerzo y costo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q2"
+                            >
+                                <h3>
+                                    ¿Cuánto tiempo toma desarrollar una
+                                    aplicación?
+                                </h3>
+                            </div>
+                            <div
+                                id="faq-q2"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cuánto tiempo toma desarrollar una aplicación?"
+                            >
+                                <p class="text-gray-700">
+                                    El tiempo de desarrollo depende del alcance
+                                    del proyecto. Desde un MVP (Producto Mínimo
+                                    Viable) que puede estar listo en pocas
+                                    semanas, hasta soluciones más complejas que
+                                    requieren varios meses. Te daré un
+                                    cronograma claro después de entender tus
+                                    necesidades.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q3"
+                            >
+                                <h3>
+                                    ¿Necesito conocimientos técnicos para
+                                    trabajar contigo?
+                                </h3>
+                            </div>
+                            <div
+                                id="faq-q3"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Necesito conocimientos técnicos para trabajar contigo?"
+                            >
+                                <p class="text-gray-700">
+                                    ¡Absolutamente no! Mi rol es traducir tus
+                                    ideas de negocio en soluciones técnicas. Yo
+                                    me encargo de toda la parte tecnológica para
+                                    que tú puedas enfocarte en lo que mejor
+                                    sabes hacer: hacer crecer tu negocio.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q4"
+                            >
+                                <h3>
+                                    ¿Ofreces mantenimiento después del
+                                    lanzamiento?
+                                </h3>
+                            </div>
+                            <div
+                                id="faq-q4"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Ofreces mantenimiento después del lanzamiento?"
+                            >
+                                <p class="text-gray-700">
+                                    Sí, ofrezco planes de soporte continuo que
+                                    incluyen mantenimiento, actualizaciones de
+                                    seguridad y asistencia técnica para asegurar
+                                    que tu aplicación o sistema funcione siempre
+                                    de forma óptima y se adapte a futuras
+                                    necesidades.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion-item mb-4 rounded-lg overflow-hidden shadow-md border border-gray-200"
+                        >
+                            <div
+                                class="accordion-header"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="faq-q5"
+                            >
+                                <h3>
+                                    ¿Cómo sé que mi idea está segura contigo?
+                                </h3>
+                            </div>
+                            <div
+                                id="faq-q5"
+                                class="accordion-content"
+                                role="region"
+                                aria-labelledby="¿Cómo sé que mi idea está segura contigo?"
+                            >
+                                <p class="text-gray-700">
+                                    La confidencialidad es primordial. Estoy
+                                    comprometido a proteger tu propiedad
+                                    intelectual desde el primer día. Si lo
+                                    deseas, podemos firmar un Acuerdo de
+                                    Confidencialidad (NDA) antes de discutir los
+                                    detalles de tu proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>¿Listo para Forjar tu Próximo Éxito Digital?</h2>
+                <p>
+                    Si tu negocio necesita una solución de software a medida,
+                    una aplicación innovadora o simplemente quieres explorar el
+                    potencial de la tecnología, estoy listo para que
+                    conversemos.
+                </p>
+
+                <div class="contact-links">
+                    <a
+                        href="mailto:santurdaneta@gmail.com"
+                        class="btn-contact"
+                        aria-label="Enviar correo electrónico"
+                        >Enviar correo electrónico
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a
+                        href="https://wa.me/51933391624?text=Hola%20Santiago%2C%20me%20interesa%20transformar%20mi%20negocio%20con%20software"
+                        target="_blank"
+                        class="btn-contact"
+                        aria-label="Enviar mensaje por WhatsApp"
+                    >
+                        <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/santiagourdanetaanton/"
+                        target="_blank"
+                        class="btn-contact"
+                        aria-label="Visitar perfil de LinkedIn"
+                    >
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a
+                        href="https://github.com/santiagourdaneta"
+                        target="_blank"
+                        class="btn-contact"
+                        aria-label="Visitar perfil de GitHub"
+                    >
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2025 Santiago Urdaneta. Todos los derechos reservados.
+                Forjando el futuro digital.
+            </p>
+        </footer>
+
+        <script>
+            // JavaScript para animaciones de fade-in al hacer scroll
+            document.addEventListener("DOMContentLoaded", () => {
+                const sections = document.querySelectorAll("section");
+
+                const observerOptions = {
+                    root: null,
+                    rootMargin: "0px",
+                    threshold: 0.1, // La sección es visible al 10%
+                };
+
+                const observer = new IntersectionObserver(
+                    (entries, observer) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("is-visible");
+                                observer.unobserve(entry.target); // Dejar de observar una vez visible
+                            }
+                        });
+                    },
+                    observerOptions,
+                );
+
+                sections.forEach((section) => {
+                    observer.observe(section);
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            window.smartlook ||
+                (function (d) {
+                    var o = (smartlook = function () {
+                            o.api.push(arguments);
+                        }),
+                        h = d.getElementsByTagName("head")[0];
+                    var c = d.createElement("script");
+                    o.api = new Array();
+                    c.async = true;
+                    c.type = "text/javascript";
+                    c.charset = "utf-8";
+                    c.src = "https://web-sdk.smartlook.com/recorder.js";
+                    h.appendChild(c);
+                })(document);
+            smartlook("init", "475719831ae4b18e90c757d375ba8e7049ac2b72", {
+                region: "eu",
+            });
+        </script>
+    </body>
+</html>

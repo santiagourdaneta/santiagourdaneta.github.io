@@ -1,0 +1,15 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <filesMatch "\.(jpg|jpeg|png|gif|webp|js|css)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </filesMatch>
+</IfModule>
