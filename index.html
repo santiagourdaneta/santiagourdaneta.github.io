@@ -69,12 +69,13 @@
         </header>
 
         <main class="main-content-wrapper">
-            <section id="hero" class="text-center">
-                <h1>Systems Architect</h1>
+            <section id="hero" class="reveal">
+                <span class="pre-title">Systems Architect & Developer</span>
+                <h1>Arquitectura que impulsa el futuro digital</h1>
                 <p class="hero-subtitle">
-                    Transformando complejidad técnica en sistemas de alto
-                    rendimiento. Especialista en optimización, escalabilidad y
-                    arquitectura limpia.
+                    Diseño ecosistemas digitales de alto rendimiento y
+                    soluciones informaticas escalables, seguras y optimizadas
+                    para el crecimiento real de tu negocio.
                 </p>
             </section>
 
@@ -259,20 +260,29 @@
                             </svg>
                         </a>
                     </div>
-
-                    <div class="footer-bottom">
-                        <p>
-                            &copy; 2026 Santiago Urdaneta.
-                            <span class="tech-stack"
-                                >Built with Zero-Dependency Performance</span
-                            >
-                        </p>
-                    </div>
                 </div>
             </footer>
         </main>
 
         <script>
+            // Animación al hacer Scroll
+            const revealElements = () => {
+                const reveals = document.querySelectorAll(".reveal");
+
+                reveals.forEach((element) => {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 100; // Cuántos px deben verse para activar
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        element.classList.add("active");
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", revealElements);
+            // Ejecutar una vez al cargar por si hay elementos visibles
+            revealElements();
             // Función para el Menú Hamburguesa
             function toggleMenu() {
                 const nav = document.getElementById("navLinks");

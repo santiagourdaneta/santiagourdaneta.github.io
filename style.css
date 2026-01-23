@@ -369,3 +369,60 @@ section {
         display: none;
     }
 }
+/* 1. TIPOGRAFÍA DINÁMICA & RESPONSIVE */
+html {
+    /* Base más grande para que 1rem sea legible */
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    } /* Ajuste para móviles */
+}
+
+h1 {
+    /* Mínimo 2rem, ideal 8vw, máximo 4.5rem */
+    font-size: clamp(2.2rem, 10vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.7;
+    color: var(--text-dim);
+    max-width: 75ch; /* Limita el ancho de lectura para que no canse la vista */
+}
+
+/* 2. OPTIMIZACIÓN DE ESPACIOS (SENSACIÓN DE VACÍO) */
+section {
+    /* Reducimos el padding exagerado */
+    padding: 80px 7%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 5%; /* Menos espacio en móvil para aprovechar la pantalla */
+    }
+}
+
+/* 3. ANIMACIONES DE ENTRADA (REVEAL) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
